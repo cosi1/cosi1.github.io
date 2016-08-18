@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Deep thoughts and gists"
+---
+<div class="introduction">
+  <h1>Hi there!</h1>
+
+<p>In this place, you will find small scraps from my thought processes, focused on (but not limited to) the great functional programming language called R.</p>
+<p>Have fun!</p>
+</div>
+
+<hr>
+
+<div class="toc">
+  <h2>Recent thoughts</h2>
+  <ul class="post">
+  {% for item in site.texts reversed do %}
+  
+    <li class="post-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+	  <br />
+	  <span>
+	    {{ item.description }}
+	  </span>
+    </li>
+  {% endfor %}
+  </ul>  
+
+</div>
+
+
+
