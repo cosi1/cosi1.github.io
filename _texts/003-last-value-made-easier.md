@@ -14,3 +14,13 @@ From now on, `.()` will yield the last calculated value.
 
 Btw. Isn't it great that R lets you define a function named `.`? :-)
 
+[UPDATE]
+
+Or even better:
+
+~~~ R
+makeActiveBinding(".", function() .Last.value, .GlobalEnv)
+~~~
+
+This saves two more keystrokes (three, if you count Shift) and looks much more elegant.
+
