@@ -37,3 +37,24 @@ for (handlerData in allHandlers) {
   )
 }
 ~~~
+
+[UPDATE]
+
+The above solution is inelegant as crap; here's a better one:
+
+~~~ R
+for (handlerData in allHandlers) {
+  handlerFunction = substitute(
+    function(file) { someFunction(param = handlerParam) },
+	alist(handlerParam = handlerData)
+  )
+  downloadHandlerParams = list(
+    filename = paste0("something", handlerData),
+    content = eval(handlerFunction)
+  )
+  output[[paste0("handler_", handlerData)]] = do.call(
+    "downloadHandler", downloadHandlerParams
+  )
+}
+~~~
+
