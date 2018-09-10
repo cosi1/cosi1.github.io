@@ -10,7 +10,7 @@ Thanks to the nature of R, it's easy to implement an elegant mechanism, based on
 
 {% gist 7234dc2bcb00b990dfd4e82c5735537a %}
 
-Now, suppose we have a package with one exported function, named `main()`, located in main.R - it multiplies its input by two (I couldn't come up with a more sophisticated mechanism...):
+Now, suppose we have a package with one exported function, named `main()`, located in main.R - it multiplies its input by two (I couldn't come up with a more sophisticated example...):
 
 ~~~ R
 #' @export
@@ -19,7 +19,7 @@ main = function(x) {
 }
 ~~~
 
-We've developed an improved version of this function, which multiplies x by itself. Now, we want to crash-test it on the development machine, but without affecting the production environment (where -- according to the rules of continuous delivery/deployment -- the code might land before tests end). Let's put the new version of the function in mainDev.R (but *not* export it!) and add the file to the `Collate` section of DESCRIPTION *before* main.R,
+We've developed an improved version of this function, which multiplies x by itself. Now we want to crash-test it on the development machine, but without affecting the production environment (where -- according to the rules of continuous delivery/deployment -- the code might land before tests end). Let's put the new version of the function in mainDev.R (but *not* export it!) and add the file to the `Collate` section of DESCRIPTION *before* main.R,
 
 ~~~ R
 main.new = function(x) {
