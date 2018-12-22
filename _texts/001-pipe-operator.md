@@ -2,6 +2,7 @@
 layout: post
 title: Minimalist pipe operator for R
 description: ...in 7 lines of code
+date: 18.08.2016
 ---
 
 This is an extremely simplified version of pipe operator (`%>%`) known from [magrittr](https://github.com/smbache/magrittr) and [dplyr](https://github.com/hadley/dplyr).

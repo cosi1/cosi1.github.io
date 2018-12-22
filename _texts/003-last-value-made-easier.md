@@ -2,6 +2,7 @@
 layout: post
 title: .Last.value made easier
 description: 8 keystrokes less!
+date: 25.11.2016
 ---
 
 If you're like me, you probably use R as a handy calculator. Unlike typical calculators, however, this one doesn't instantly give you access to the result of the last calculation. `.Last.value` is a pain to type (even with autocompletion), but you can define something shorter:

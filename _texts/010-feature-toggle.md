@@ -2,6 +2,7 @@
 layout: post
 title: Feature toggles in R
 description: Continuous deployment made easy
+date: 10.09.2018
 ---
 
 Recently, a colleague introduced me to the concept of [feature toggles (or switches)](https://en.wikipedia.org/wiki/Feature_toggle). In short, it is a software engineering technique that allows for selective deployment of new features to different environments (development and production) without the need to use separate code bases (e.g., different Git branches).

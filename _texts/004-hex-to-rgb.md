@@ -2,6 +2,7 @@
 layout: post
 title: Hex to (PyMOL's) RGB
 description: A quick one-liner
+date: 13.09.2016
 ---
 
 I needed to convert a bunch of hex-encoded color codes to a set of `set_color` commands used by [PyMOL](https://www.pymol.org/). Here's how I did it:

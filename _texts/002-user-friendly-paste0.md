@@ -2,6 +2,7 @@
 layout: post
 title: User-friendly paste0()
 description: Concatenate strings with an infix operator
+date: 23.08.2016
 ---
 
 ~~~ R

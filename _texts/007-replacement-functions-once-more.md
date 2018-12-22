@@ -2,6 +2,7 @@
 layout: post
 title: Replacement functions once more
 description: R magic
+date: 18.10.2017
 ---
 
 Replacement functions are one of the best features of R. They are quite easy to write once you learn how to do it, but have you even wondered how expressions like `names(x)[3:4] = c("A", "B")` work?

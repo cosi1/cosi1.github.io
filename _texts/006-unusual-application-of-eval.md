@@ -2,6 +2,7 @@
 layout: post
 title: Unusual application of eval()
 description: The heritage of Lisp
+date: 16.04.2017
 ---
 
 Today I came across a problem when writing a Shiny application: I wanted to dynamically create download handlers, each one with a content function based on the input data. It seemed easy at first:

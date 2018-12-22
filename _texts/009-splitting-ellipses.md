@@ -2,6 +2,7 @@
 layout: post
 title: Splitting ellipses
 description: Connecting the dots
+date: 21.05.2018
 ---
 
 Have you ever written a function that takes an ellipsis (`...`) as input and passes it further to another function? Sure you have. Now what if there are two functions, both expecting different sets of arguments? Simply passing your ellipsis to both of them will make R complain about unused arguments.

@@ -2,6 +2,7 @@
 layout: post
 title: Python-flavored imports
 description: Selective imports and aliases
+date: 27.02.2018
 ---
 
 Inspired by [this recent blog post](https://trinkerrstuff.wordpress.com/2018/02/22/minimal-explicit-python-style-package-loading-for-r/) found on R-Bloggers, I wrote two very simple functions that tackle the problem in a slightly different way:
