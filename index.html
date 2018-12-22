@@ -14,7 +14,8 @@ title: "Deep thoughts and gists"
 <div class="toc">
   <h2>Recent thoughts</h2>
   <ul class="post">
-  {% for item in site.texts reversed do %}
+  {% assign reversed_texts = site.texts | reverse %}
+  {% for item in reversed_texts %}
   
     <li class="post-title">
       <a href="{{ site.baseurl }}{{ item.url }}">

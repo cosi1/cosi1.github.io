@@ -40,6 +40,6 @@ kramdown:
 # Exclusions from the final site
 exclude: [optional, vendor]
 
-gems:
+plugins:
   - jekyll-gist
 
